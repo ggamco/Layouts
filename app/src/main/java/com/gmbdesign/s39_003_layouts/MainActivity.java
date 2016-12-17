@@ -6,6 +6,8 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     /*
+     * METODO SENSIBLE CAMBIOS DE ORIENTACIÓN
+     *
      * desde la vista de proyecto creamos una nueva carpeta layout-land al mismo nivel que layout
      * en ella copiamos el activity-main.xml, mantenemos el mismo nombre, ya que es el que
      * especificamos en el metodo onCreate.
@@ -15,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
      *
      * tambien podemos crear layout para resoluciones especificas como por ejemplo:
      * layout-sw720dp -> valdría para pantallas con esa resolución o mayor (10")
+     *
+     * METODO INSENSIBLE CAMBIOS DE ORIENTACIÓN
+     *
+     * Modificamos el Manifest y añadimos las siguientes lineas al activity
+     * android:configChanges="keyboardHidde n|orientation|screenSize"
+     * android:screenOrientation="portrait"
      */
 
     @Override
